@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Muhammad Ihsan - Personal Profile</title>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Georgia", serif;
+        background-color: #eae4dc;
+      }
+
+      /* CONTAINER BIAR TENGAH (PORTRAIT) */
+      .container {
+        width: 800px;
+        margin: auto;
+        background-color: #ffffff;
+        min-height: 100vh;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+
+      /* HEADER */
+      header {
+        text-align: center;
+        padding: 40px 20px;
+        background-color: #2f2a26;
+        color: #f5f5f5;
+      }
+
+      header h1 {
+        margin: 0;
+        letter-spacing: 1px;
+      }
+
+      /* NAV */
+      nav {
+        background-color: #4a413c;
+        text-align: center;
+        padding: 12px;
+      }
+
+      nav a {
+        color: #f5f5f5;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: #d4af37;
+      }
+
+      /* SECTION */
+      section {
+        padding: 30px;
+        border-bottom: 1px solid #eee;
+      }
+
+      h2 {
+        color: #2f2a26;
+        margin-bottom: 10px;
+      }
+
+      /* FOTO */
+      .profile {
+        text-align: center;
+      }
+
+      .profile img {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-top: 10px;
+      }
+
+      /* LIST */
+      ul {
+        padding-left: 20px;
+      }
+
+      /* TABLE */
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #f0e8de;
+      }
+
+      /* FORM */
+      form input,
+      form select,
+      form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+      }
+
+      button {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #2f2a26;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #4a413c;
+      }
+
+      /* FOOTER */
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #2f2a26;
+        color: #f5f5f5;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Muhammad Ihsan</h1>
+        <p>Personal Profile</p>
+      </header>
+
+      <nav>
+        <a href="#tentang">Tentang</a>
+        <a href="#keahlian">Keahlian</a>
+        <a href="#pengalaman">Pengalaman</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+
+      <main>
+        <section id="tentang">
+          <h2>Tentang Saya</h2>
+
+          <div class="profile">
+            <img
+              src="C:\Users\Administrator\Pictures\Saved Pictures\WhatsApp Image 2026-04-04 at 20.14.26.jpeg"
+              alt="Foto Muhammad Ihsan"
+            />
+            <h3>Muhammad Ihsan</h3>
+          </div>
+          <p>||Muhammad Ihsan — Web Development Enthusiast</p>
+          <p>
+            ||Mahasiswa yang sedang fokus mempelajari HTML, CSS, dan JavaScript
+            untuk membangun website yang responsif dan interaktif.
+          </p>
+        </section>
+
+        <section id="keahlian">
+          <h2>Keahlian</h2>
+
+          <h3>Skill Teknis</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+
+          <h3>Skill Non Teknis</h3>
+          <ul>
+            <li>Disiplin</li>
+            <li>Kerja Tim</li>
+            <li>Problem Solving</li>
+          </ul>
+        </section>
+
+        <section id="pengalaman">
+          <h2>Pengalaman</h2>
+
+          <ol>
+            <li>2025 - Belajar HTML</li>
+            <li>2025 - Belajar CSS & JavaScript</li>
+            <li>2026 - Membuat project website</li>
+          </ol>
+
+          <h3>Timeline</h3>
+          <table>
+            <tr>
+              <th>Tahun</th>
+              <th>Kegiatan</th>
+            </tr>
+            <tr>
+              <td>2025</td>
+              <td>Belajar HTML</td>
+            </tr>
+            <tr>
+              <td>2025</td>
+              <td>Belajar CSS & JS</td>
+            </tr>
+            <tr>
+              <td>2026</td>
+              <td>Project Website</td>
+            </tr>
+          </table>
+        </section>
+
+        <section id="kontak">
+          <h2>Kontak</h2>
+
+          <form>
+            <label>Nama</label>
+            <input type="text" placeholder="Muhammad Ihsan" />
+
+            <label>Email</label>
+            <input type="email" placeholder="IhsanJawa806@gmail.com" />
+
+            <label>Subjek</label>
+            <select>
+              <option>Pertanyaan</option>
+              <option>Kerja Sama</option>
+              <option>Lainnya</option>
+            </select>
+
+            <label>Pesan</label>
+            <textarea rows="4" placeholder="Tulis pesan"></textarea>
+
+            <button type="submit">Kirim</button>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <p>© 2026 Muhammad Ihsan</p>
+      </footer>
+    </div>
+  </body>
+</html>
