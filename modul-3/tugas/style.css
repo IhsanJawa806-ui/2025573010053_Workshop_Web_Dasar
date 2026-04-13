@@ -1,0 +1,146 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* NOTE: class "1" sebenarnya tidak valid (tidak boleh diawali angka),
+   tapi tetap kita handle supaya tetap bisa dipakai */
+.\31 {
+  max-width: 900px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+/* ================= HEADER ================= */
+header {
+  text-align: center;
+  padding: 20px 0;
+  background: #606069;
+  color: white;
+  border-radius: 10px;
+}
+
+header h1 {
+  margin-bottom: 5px;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #1e1b4b;
+}
+
+/* ================= SECTION ================= */
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+/* ================= PROFILE ================= */
+.profile {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.profile img {
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* ================= LIST ================= */
+ul,
+ol {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* ================= TABLE ================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+th {
+  background: #000000;
+  color: white;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* ================= FORM ================= */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+select,
+textarea {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background: #000000;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #000000;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  background: #111;
+  color: white;
+  border-radius: 10px;
+}

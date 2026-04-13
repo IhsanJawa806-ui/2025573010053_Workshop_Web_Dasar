@@ -1,0 +1,38 @@
+/* Styling semua elemen <h1> */
+h1 {
+  color: #2c3e50;
+  font-size: 2rem;
+}
+/* Styling semua elemen dengan class="intro" */
+.intro {
+  color: #27ae60;
+  font-style: italic;
+}
+/* Styling elemen dengan id="khusus" */
+#khusus {
+  background-color: #fef9e7;
+  padding: 10px;
+  border-left: 4px solid #f39c12;
+}
+/* Siapa yang menang? */
+/* (0,0,0,1) */
+p {
+  color: black;
+}
+/* (0,0,1,0) — menang dari p */
+.teks-biru {
+  color: blue;
+}
+/* (0,1,0,0) — menang dari .teks-biru */
+#teks-merah {
+  color: red;
+}
+/* Dua class — sama specificity, */
+/* yang terakhir menang */
+.a {
+  color: orange;
+}
+.b {
+  color: purple;
+}
+/* <p class='a b'> → purple */

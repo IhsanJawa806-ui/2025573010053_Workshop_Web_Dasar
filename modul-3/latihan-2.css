@@ -1,0 +1,106 @@
+:root {
+  --primary-color: #4f46e5;
+  --secondary-color: #f3f4f6;
+  --text-color: #333;
+  --font-main: "Arial", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--text-color);
+  background-color: #fff;
+}
+
+/* ================= HEADER ================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: var(--secondary-color);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.subscribe-btn {
+  padding: 8px 16px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+}
+
+/* ================= HERO ================= */
+.hero {
+  padding: 40px 30px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero .meta {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ================= MAIN CONTENT ================= */
+.main {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
+
+.content {
+  flex: 7;
+}
+
+.sidebar {
+  flex: 3;
+  background: var(--secondary-color);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background: #111;
+  color: white;
+}
+
+.footer div {
+  flex: 1;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
