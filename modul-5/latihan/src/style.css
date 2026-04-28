@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+/* Button */
+.btn {
+  @apply bg-white text-black px-6 py-2 rounded-lg 
+         hover:bg-gray-200 transition 
+         dark:bg-gray-200 dark:text-black;
+}
+
+/* Card */
+.card {
+  @apply bg-white dark:bg-gray-700 
+         p-6 rounded-xl shadow-md text-center 
+         hover:scale-105 transition;
+}
+
+/* Section Title */
+.section-title {
+  @apply text-2xl md:text-3xl font-bold 
+         text-center mb-10;
+}
+
+/* Smooth transition seluruh halaman */
+body {
+  @apply transition-colors duration-300;
+}
+
+/* Navbar */
+.navbar {
+  @apply bg-white dark:bg-gray-800 shadow-md;
+}
+
+/* Footer */
+.footer {
+  @apply bg-gray-900 text-white;
+}

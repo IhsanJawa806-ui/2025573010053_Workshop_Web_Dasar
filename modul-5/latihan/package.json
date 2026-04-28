@@ -1,5 +1,5 @@
 {
-  "name": "modul-5",
+  "name": "latihan",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -11,6 +11,6 @@
   "devDependencies": {
     "@tailwindcss/vite": "^4.2.4",
     "tailwindcss": "^4.2.4",
-    "vite": "^8.0.9"
+    "vite": "^8.0.10"
   }
 }

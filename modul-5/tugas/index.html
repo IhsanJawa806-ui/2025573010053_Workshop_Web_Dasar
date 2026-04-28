@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IhsanShop</title>
+  </head>
+
+  <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <h1 class="text-xl font-bold">IhsanShop</h1>
+
+      <div class="hidden md:flex gap-6">
+        <a href="#">Home</a>
+        <a href="#">Produk</a>
+        <a href="#">Testimoni</a>
+        <a href="#">Kontak</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <!-- Dark Toggle -->
+        <button id="darkToggle" class="btn">🌙</button>
+
+        <div class="md:hidden text-2xl">☰</div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h2 class="text-3xl md:text-5xl font-bold mb-4">Belanja Mudah & Cepat</h2>
+      <p class="mb-6">Produk terbaik dengan harga terbaik</p>
+      <button class="btn animate-bounce">Belanja Sekarang</button>
+    </section>
+
+    <!-- PRODUK -->
+    <section class="p-6">
+      <h2 class="text-2xl font-bold mb-6 text-center">Produk Kami</h2>
+
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <!-- CARD -->
+        <div class="card hover:scale-105 transition">
+          <img
+            src="https://tse3.mm.bing.net/th/id/OIP.sMwAoU5g-9H11_GmktkL8QHaHa?pid=ImgDet&w=181&h=181&c=7&dpr=1,5&o=7&rm=3"
+            class="mb-3"
+          />
+          <h3 class="font-bold">Produk 1</h3>
+          <p>Rp 100.000</p>
+        </div>
+
+        <div class="card hover:scale-105 transition">
+          <img
+            src="https://tse4.mm.bing.net/th/id/OIP.IzZn0rM_DhV5vfXyghiyLgHaHa?pid=ImgDet&w=178&h=178&c=7&dpr=1,5&o=7&rm=3"
+          />
+          <h3>Produk 2</h3>
+          <p>Rp 120.000</p>
+        </div>
+
+        <div class="card hover:scale-105 transition">
+          <img
+            src="https://tse1.mm.bing.net/th/id/OIP.2sWLqOBSupLpSVxSejgXdQHaJT?pid=ImgDet&w=178&h=223&c=7&dpr=1,5&o=7&rm=3"
+          />
+          <h3>Produk 3</h3>
+          <p>Rp 90.000</p>
+        </div>
+
+        <div class="card hover:scale-105 transition">
+          <img
+            src="https://th.bing.com/th/id/OIP.pvEKNAR-6yBeVNvprY7CsgHaHa?w=199&h=199&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+          />
+          <h3>Produk 4</h3>
+          <p>Rp 150.000</p>
+        </div>
+
+        <div class="card hover:scale-105 transition">
+          <img
+            src="https://th.bing.com/th?q=Sepatu+Salomon+6+Inch&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.5&pid=InlineBlock&rm=3&mkt=en-ID&cc=ID&setlang=en&adlt=strict&t=1&mw=247"
+          />
+          <h3>Produk 5</h3>
+          <p>Rp 200.000</p>
+        </div>
+
+        <div class="card hover:scale-105 transition">
+          <img
+            src="https://th.bing.com/th/id/OIP.a0uqgsW67VXGWSdxP6FEigHaHZ?w=204&h=196&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+          />
+          <h3>Produk 6</h3>
+          <p>Rp 80.000</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONI -->
+    <section class="p-6 bg-gray-100 dark:bg-gray-800">
+      <h2 class="text-2xl font-bold text-center mb-6">Testimoni</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card animate-pulse">"Produk bagus!"</div>
+        <div class="card">"Pengiriman cepat!"</div>
+        <div class="card">"Recommended!"</div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="p-6 text-center">
+      <h2 class="text-xl font-bold mb-4">Subscribe Newsletter</h2>
+      <input type="email" placeholder="Email kamu" class="input mb-3" />
+      <br />
+      <button class="btn">Subscribe</button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>© 2026 IhsanShop</p>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

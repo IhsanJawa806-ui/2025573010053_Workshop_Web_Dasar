@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* COMPONENTS */
+.navbar {
+  @apply sticky top-0 bg-white dark:bg-gray-800 p-4 flex justify-between items-center shadow;
+}
+
+.hero {
+  @apply p-10 text-center bg-gray-500 text-white;
+}
+
+.card {
+  @apply p-4 border rounded-lg shadow bg-white dark:bg-gray-700;
+}
+
+.btn {
+  @apply px-4 py-2 bg-black-500 text-white rounded hover:bg-white-600 transition;
+}
+
+.input {
+  @apply border p-2 rounded w-64;
+}
+
+.footer {
+  @apply text-center p-4 bg-gray-200 dark:bg-gray-800;
+}
