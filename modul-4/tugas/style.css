@@ -1,0 +1,155 @@
+:root {
+  --primary: #3e2723;
+  --secondary: #795548;
+  --accent: #d7ccc8;
+  --bg: #f9f5f3;
+  --text: #2e2e2e;
+  --spacing: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing);
+  background: rgba(62, 39, 35, 0.9);
+  color: white;
+  position: sticky;
+  top: 0;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+.hero {
+  display: grid;
+  place-items: center;
+  height: 90vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1509042239860-f550ce710b93");
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+.hero button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  border: none;
+  background: var(--secondary);
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.hero button:hover {
+  transform: scale(1.1);
+}
+.badge {
+  display: inline-block;
+  margin-top: 15px;
+  background: crimson;
+  padding: 5px 15px;
+  border-radius: 20px;
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.features {
+  padding: 40px var(--spacing);
+  text-align: center;
+}
+.feature-grid {
+  display: grid;
+  gap: var(--spacing);
+  margin-top: 20px;
+}
+.card {
+  background: white;
+  padding: var(--spacing);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  position: relative;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: var(--secondary);
+  transition: 0.3s;
+}
+.card:hover::after {
+  width: 100%;
+}
+.card:hover {
+  transform: translateY(-8px);
+}
+.testimonial-grid {
+  display: grid;
+  gap: var(--spacing);
+  padding: 40px var(--spacing);
+}
+.footer {
+  display: grid;
+  gap: var(--spacing);
+  background: var(--primary);
+  color: white;
+  padding: 30px;
+}
+@media (min-width: 768px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .feature-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .testimonial-grid {
+    grid-template-columns: repeat(3, 1fr);
+  } /* Hover animation */
+  .hamburger:hover span:nth-child(1) {
+    transform: translateX(5px);
+  }
+
+  .hamburger:hover span:nth-child(2) {
+    transform: scaleX(0.7);
+  }
+
+  .hamburger:hover span:nth-child(3) {
+    transform: translateX(-5px);
+  }
+}
