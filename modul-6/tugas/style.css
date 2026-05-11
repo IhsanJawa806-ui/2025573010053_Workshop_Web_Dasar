@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+input,
+select,
+button {
+  padding: 8px;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.filters button {
+  margin: 5px 3px;
+}
+
+.filters .active {
+  background: black;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #eee;
+  margin-top: 5px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.priority-tinggi {
+  border-left: 5px solid red;
+}
+
+.priority-sedang {
+  border-left: 5px solid orange;
+}
+
+.priority-rendah {
+  border-left: 5px solid green;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}

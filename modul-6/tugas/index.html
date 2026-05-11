@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo List</h1>
+
+      <!-- Input -->
+      <div class="input-group">
+        <input type="text" id="todo-input" placeholder="Masukkan tugas..." />
+        <select id="priority">
+          <option value="rendah">Rendah</option>
+          <option value="sedang">Sedang</option>
+          <option value="tinggi">Tinggi</option>
+        </select>
+        <button id="add-btn">Tambah</button>
+      </div>
+
+      <!-- Filter -->
+      <div class="filters">
+        <button data-filter="all" class="active">Semua</button>
+        <button data-filter="active">Aktif</button>
+        <button data-filter="completed">Selesai</button>
+      </div>
+
+      <!-- List -->
+      <ul id="todo-list"></ul>
+
+      <!-- Footer -->
+      <div class="footer">
+        <span id="counter">0 tugas tersisa</span>
+        <button id="clear-completed">Hapus Semua Selesai</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
